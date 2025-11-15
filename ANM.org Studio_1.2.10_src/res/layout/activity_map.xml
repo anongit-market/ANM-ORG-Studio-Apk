@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@id/container"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@id/bar"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <include
+        android:id="@id/map_container"
+        layout="@layout/map_container" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_gravity="start|bottom|center"
+        android:id="@id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32.0dip"
+        android:src="@drawable/ic_play"
+        android:animateLayoutChanges="true"
+        android:layout_marginStart="@dimen/padding_16" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_gravity="start|bottom|center"
+        android:id="@id/stop"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32.0dip"
+        android:src="@drawable/ic_stop"
+        android:animateLayoutChanges="true"
+        android:layout_marginStart="@dimen/padding_16" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
