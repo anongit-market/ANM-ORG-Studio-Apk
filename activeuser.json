@@ -12,5 +12,12 @@
         "password": "Ashish@99",
         "expirydate": "15-06-2026",
         "Allowoffline": false
+    },
+    {
+        "device_id": "hdgdgvsys6yevshs",
+        "username": "64675",
+        "password": "56656",
+        "expirydate": "31-12-2025",
+        "Allowoffline": false
     }
 ]
